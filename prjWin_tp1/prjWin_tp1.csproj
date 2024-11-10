@@ -1,0 +1,288 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4819E1C5-0CEB-49F8-9768-274F491F10E7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>prjWin_tp1</RootNamespace>
+    <AssemblyName>prjWin_tp1</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutBox1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutBox1.Designer.cs">
+      <DependentUpon>AboutBox1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrincipal.Designer.cs">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmScientific.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmScientific.Designer.cs">
+      <DependentUpon>frmScientific.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmStandard_2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStandard_2.designer.cs">
+      <DependentUpon>frmStandard_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUserMan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUserMan.Designer.cs">
+      <DependentUpon>frmUserMan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AboutBox1.resx">
+      <DependentUpon>AboutBox1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrincipal.resx">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmScientific.resx">
+      <DependentUpon>frmScientific.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStandard_2.resx">
+      <DependentUpon>frmStandard_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUserMan.resx">
+      <DependentUpon>frmUserMan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img_422088.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calculatrice-icone-png.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fx991es_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unnamed %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-coin-exchange-icon-2427-thumb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\54079.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-menu-2-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-pourcentage-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-symbole-effacer.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-symbole-effacer-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-diviser-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-nombre-carré-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-upvote-downvote-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\196562786_311442843906495_2832907568384361680_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TTSS-Hero-03A.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-racine-carrée-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\133.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\133.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\10x - Copie %282%29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\and - Copie %282%29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xy.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\v5 - Copie.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\x2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\log.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ln - Copie %282%29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mod - Copie.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\expo - Copie - Copie.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\khata1 - Copie %282%29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e - Copie %282%29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ceffacer - Copie - Copie.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\symbole - Copie.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\division - Copie - Copie.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\division - Copie %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1222.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\12221.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\n.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\division - Copie - Copie1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xamp.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\moins %282%29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\division.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xamp1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xamp2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2funct.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\x3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\racine3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RacineCubique.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xcube.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RacineY.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2x.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
